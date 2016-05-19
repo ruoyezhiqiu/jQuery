@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击消失</title>
+    <script src="../js/jquery-1.12.3.min.js"></script>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <h1>jquery的核心语法：$(selector).action()</h1>
+    <p>if you click me i will over.</p>
+    <p>click me !</p>
+    <p>click me !</p>
+    <p>click me !</p>
+</div>
+</body>
+</html>
