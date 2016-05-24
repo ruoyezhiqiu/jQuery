@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>点击实现上滑效果</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#div1").click(function(){
+				$("#div2").slideUp();
+			});
+		});
+		</script>
+		<style>
+			#div1,#div2{
+				padding: 5px;
+				text-align: center;
+				background-color: #e5eecc;
+				border: solid 1px #c3c3c3;
+			}
+			#div2{
+				padding: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>点击实现上滑效果</h1>
+		<div id="div1">
+			点击我实现上滑效果。
+		</div>
+		<div id="div2">
+			你好啊！
+		</div>
+	</body>
+</html>
