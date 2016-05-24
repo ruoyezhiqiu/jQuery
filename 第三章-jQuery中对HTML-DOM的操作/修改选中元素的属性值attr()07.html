@@ -7,17 +7,22 @@
 		<script>
 			$(document).ready(function(){
 				$("button").click(function(){
-					$("#div1").attr("style","background-color:green;width:200px;height:200px;border:2px solid blue;");
+					/*以下属于同时修改一个元素的多个属性值得样式 */
+					$("#div1").attr({"style":"background-color:#F421E9;width:200px;height:200px;border:5px dotted #36FB16;","title":"修改过后的div样式"});
+				});
+				$("#btn02").click(function(){
+					/*以下属于只修改选中元素中的某一个属性的方式：*/
+					$("h1").attr("style","text-align:left;");
 				});
 			});
 		</script>
 	</head>
 	<body>
-		<h1>设置选中元素的属性</h1>
-		<input type="color" name="" value="" placeholder="">
+		<h1 style="text-align: center;">修改选中元素的属性</h1>
 		<p style="color:green;">jQuery中使用attr()方法获取其属性值，然后加以修改其属性。</p>
-		<div id="div1" style="background-color: #EC5E20;width:200px;height:200px;border:5px dotted blue;">
+		<div id="div1" style="background-color: #EC5E20;width:200px;height:200px;border:5px dotted blue;" title="原始的div样式">
 		</div><br><br>
-		<button type="button">点击我修改以上div的背景色</button>
+		<button type="button">点击我修改以上div的样式</button><br><br>
+		<button type="button" id="btn02">点击我修改h1的位置</button>
 	</body>
 </html>
