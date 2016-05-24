@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>当鼠标放到段落上时所执行的事件</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("p").hover(function(){
+					alert("你将鼠标移到了段落上！");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>当鼠标移动到段落上所触发的事件，即(hover事件)</h1>
+		<p>将鼠标移动到此段落上将触发hover事件。</p>
+	</body>
+</html>

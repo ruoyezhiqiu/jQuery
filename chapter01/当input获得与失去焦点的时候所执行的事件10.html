@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>当input获得焦点的时候所执行的事件</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("input").focus(
+				/*	function(){
+					alert("你已经将鼠标移到了文本框,文本框已经获得了焦点！");
+				}，*/
+				function(){
+					$(this).css("background-color","#ccc");
+				}
+				);
+				$("input").blur(
+					function(){
+					$(this).css("background-color","#fff");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>input获得与失去焦点时执行的事件</h1>
+		<label for="username">用户名：</label> <input type="text" id="username" name="username" placeholder="用户名"><br>
+		<label for="password">密码：</label><input type="password" name="password" id="password" placeholder="密码">
+		
+	</body>
+</html>

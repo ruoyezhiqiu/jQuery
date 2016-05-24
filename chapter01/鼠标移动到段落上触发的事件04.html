@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标移动上去触发的事件，如弹出窗口</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/*鼠标移到到元素上的事件，即：mouseenter事件*/
+			$("p").mouseenter(function(){
+				alert("你移动到了段落上，所以我就出现了！");
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>鼠标移动上去触发的事件，如弹出窗口</h1>
+	<p>将鼠标移动到此段落上看下是什么效果！</p>
+</body>
+</html>

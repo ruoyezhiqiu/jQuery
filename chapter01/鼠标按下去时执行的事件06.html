@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标放在段落上然后点击鼠标左键时，执行的事件（类似于click事件）</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("p").mousedown(function(){
+				alert("mouse down this p");
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>鼠标放到段落上，然后点击左键时执行的事件</h1>
+	<p>将鼠标移到我上面，然后点击鼠标左键，看下会发生什么</p>
+</body>
+</html>

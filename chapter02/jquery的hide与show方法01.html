@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>jquery的hide与show方法</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn01").click(function(){
+					$("p").hide(1000);
+				});
+				$("#btn02").click(function(){
+					$("p").css("color","red"),
+					$("p").show(2000);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jquery的hide与show方法</h1>
+		<p>点击下列按钮执行隐藏与显示功能</p>
+		<button type="button" id="btn01">点击隐藏段落</button><br><br>
+		<button type="button" id="btn02">点击显示段落</button>
+	</body>
+</html>

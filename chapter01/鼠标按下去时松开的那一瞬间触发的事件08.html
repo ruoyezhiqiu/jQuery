@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标按下去时松开的那一瞬间所执行的事件</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("p").mouseup(function(){
+				alert("你的鼠标松开了！");
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>鼠标按下去时松开的那一瞬间所执行的事件</h1>
+	<p>请将鼠标移动到此段落上，然后点击鼠标左键松开时所执行的事件</p>
+</body>
+</html>

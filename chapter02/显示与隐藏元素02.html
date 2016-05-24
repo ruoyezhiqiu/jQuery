@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用toggle方法实现隐藏与显示功能</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").toggle(1000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>使用toggle方法实现隐藏与显示元素的功能</h1>
+	<button type="button">点击我显示或隐藏内容</button>
+	<p>此段落将会被显示或者隐藏。</p>
+</body>
+</html>

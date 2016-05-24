@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标移动到段落上离开时执行的事件</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("p").mouseleave(function(){
+				alert("你的鼠标已经离开了段落！");
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<h1>当鼠标移动到段落的时候，离开时所发生的事件</h1>
+	<p>将鼠标移动到我上边，然后移开时，看下会发生什么</p>
+</body>
+</html>
