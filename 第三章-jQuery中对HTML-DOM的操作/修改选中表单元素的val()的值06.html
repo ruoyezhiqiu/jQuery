@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置选中表单元素的value值</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("input").css("color","red");
+				$("input").val("这是已经被改过之后的文本内容了!");
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>设置选中表单元素的value值(val()方法)</h1>
+	<p>使用val()方法修改其value值</p>
+	<input type="text" value="这是一个初始的文本内容" style="width:300px;"><br><br>
+	<button type="button">点击修改以上表单中的值</button>
+</body>
+</html>

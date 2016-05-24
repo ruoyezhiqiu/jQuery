@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery中的attr()获取html元素属性的值</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#baidu").click(function(){
+					alert("以上链接的地址是："+$("#baiduyixia").attr("href"));
+				});
+				$("#div-chain").click(function(){
+					alert("以上div的背景色是："+$("#chain").attr("style"));
+				});
+				$("#get-id").click(function(){
+					alert("以上div的id的值是："+$("#chain").attr("id"));
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>jQuery中的attr()方法的使用</h1>
+		<p style="color:green">attr()方法的作用：获得html元素的属性的值。</p>
+		<div id="chain" style="width:auto;height:32px;background-color: purple;text-align: center;"><a href="http://www.baidu.com" id="baiduyixia" style="text-decoration: none;color:white;line-height: 32px;font-size:16px;">百度一下</a></div><br>
+		<button id="baidu">点击获取以上链接的地址</button><br><br>
+		<button type="button" id="div-chain">点击获取div元素的css样式</button><br><br>
+		<button type="button" id="get-id">点击获得以上div的id的值</button>
+	</body>
+</html>

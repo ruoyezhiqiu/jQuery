@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>设置选中的元素的text()的值</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#text").css("color","red");
+					$("#text").text("我是被修改后的内容!");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>使用text()方法设置选中元素的text()内容</h1>
+		<p style="color:green;">即：设置选中元素的内容！</p>
+		<p id="text">这是一个简单的段落</p>
+		<button>点击我修改上面段落的内容</button>
+	</body>
+</html>

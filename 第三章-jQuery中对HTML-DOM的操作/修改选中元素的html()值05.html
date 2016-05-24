@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置选中的元素的html内容</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#text").css("color","red");
+				$("#text").html("这是已经<b>被修改过后</b>的p段落内容了");
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>设置选中的元素的html内容</h1>
+	<p style="color:purplle">即：设置选中元素的内容，<b>包括html中的标签!</b></p>
+	<p id="text">这是一个简单的段落。</p>
+	<button type="button">点击修改上面段落的html内容</button>
+</body>
+</html>

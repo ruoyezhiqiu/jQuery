@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- 	jQuery中：text()方法的作用:设置或者是返回选中元素的内容-->
+		<!-- 		jQuery中：html（）方法的作用：设置或者返回选中元素的内容其中包括html标签-->
+		<title>text()方法与html()方法的使用</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn01").click(function(){
+					alert("Text="+$("p").text());
+				});
+				$("#btn02").click(function(){
+					alert("Html="+$("p").html());
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>text()方法与html()方法的使用</h1>
+		<p>这是一个 <span>简单的</span>段落。 </p>
+		<button type="button" id="btn01">显示text</button><br><br>
+		<button type="button" id="btn02">显示html</button>
+	</body>
+</html>

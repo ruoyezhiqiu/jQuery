@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<!-- 	val()方法是jQuery中获取表单元素值的一个方法-->
+	<title>val()方法在jQuery中的使用</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				alert("用户输入的用户名是："+$("#username").val());
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>val()方法的使用</h1>
+	<label for="username">用户名：</label>
+	<input type="text" name="username" id="username"><br><br>
+	<button>点击获取表单中用户输入的用户名的值</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>设置选中元素的属性</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#div1").attr("style","background-color:green;width:200px;height:200px;border:2px solid blue;");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>设置选中元素的属性</h1>
+		<input type="color" name="" value="" placeholder="">
+		<p style="color:green;">jQuery中使用attr()方法获取其属性值，然后加以修改其属性。</p>
+		<div id="div1" style="background-color: #EC5E20;width:200px;height:200px;border:5px dotted blue;">
+		</div><br><br>
+		<button type="button">点击我修改以上div的背景色</button>
+	</body>
+</html>
