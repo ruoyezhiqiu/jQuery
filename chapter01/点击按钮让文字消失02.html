@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>点击按钮文字消失</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		$("button").click(function(){
+		$("p").hide();
+		});
+		});
+		</script>
+	</head>
+	<body>
+		<h1>button的点击事件，让p元素的内容隐藏起来</h1>
+		<p>nihao a jintianguode zenmeyang le a ? </p>
+		<p>nihao a jintianguode zenmeyang le a ? </p>
+		<p>nihao a jintianguode zenmeyang le a ? </p>
+		<button>点击我让文字消失吧</button>
+	</body>
+</html>

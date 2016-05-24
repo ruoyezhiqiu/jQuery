@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>双击使段落消失</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("p").dblclick(function(){
+				$(this).hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>鼠标的双击事件，双击段落中的每一行将使他们消失</h1>
+	<p>双击我试试看！</p>
+	<p>还有我！</p>
+	<p>以及我！</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ID选择器选择页面唯一元素</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn01").click(function(){
+					/*jQuery中对选中的元素的css样式做修改的方式：键值对的方式*/
+					$("#test").css("color","red");
+				});
+			});
+			$(document).ready(function(){
+				$("#btn02").click(function(){
+					$(".poem").css("font-family","微软雅黑");
+				});
+			});
+			$(document).ready(function(){
+				$("#btn03").click(function(){
+					$("#h1").css("text-align","center");
+				});
+			});
+			$(document).ready(function(){
+				$("#btn04").click(function(){
+					$("*").css("text-align","center");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>ID选择器选择页面唯一元素进行操作</h1>
+		<button type="button" id="btn01">点击我修改字体颜色</button><br><br>
+		<button type="button" id="btn02">点击我修改文字为微软雅黑</button><br><br>
+		<button type="button" id="btn03">点击为让标题居中</button><br><br>
+		<button type="button" id="btn04">点击我让所有内容居中</button>
+		<h1 id="h1">静夜思</h1>
+		<p class="poem">床前明月光，疑是地上霜。</p>
+		<p id="test">举头望明月，低头思故乡。</p>
+	</body>
+</html>
