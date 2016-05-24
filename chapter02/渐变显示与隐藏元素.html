@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渐变显示与隐藏元素</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("div").fadeToggle(1000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>渐变显示与隐藏元素</h1>
+	<button>点击我实现渐变显示与隐藏元素</button>
+	<div style="width:100px;height:100px;background-color:red"></div>
+</body>
+</html>
