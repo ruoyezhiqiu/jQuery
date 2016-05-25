@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>移除选中的一个或者多个元素</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					/*remove()方法移除选中的一个或多元素以及他们的孩子元素,此方法可以带参数*/
+					/*以下实例表示删除所有p元素中class="abc"的元素*/
+					$("p").remove(".abc");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1 style="color:red">移除选中的一个或者多个元素以及其孩子元素，使用remove()方法</h1>
+		<p>1.这是一个简单的段落。</p>
+		<p class="abc">2.这是一个简单的段落。</p>
+		<p>3.这是一个简单的段落。</p>
+		<p>4.这是一个简单的段落。</p>
+		<button type="button">点我移除以上段落文字</button>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>利用css()方法修改选中元素的css样式</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn01").click(function(){
+				alert("h1标题的文字颜色是："+$("h1").css("color"));
+			});
+			$("#btn02").click(function(){
+				$("h1").css({"color":"blue","background-color":"pink","font-family":"楷体"});
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1 style="text-align: center;background-color: green;font-family: 宋体;color:red;">这是一个标题</h1>
+	<button type="button" id="btn01">点我显示h1的颜色</button>
+	<button type="button" id="btn02">点我修改h1的样式</button>
+</body>
+</html>

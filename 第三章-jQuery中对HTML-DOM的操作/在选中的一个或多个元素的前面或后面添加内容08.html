@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>在选中的一个或者多个元素后面添加内容</title>
+		<script src="../js/jquery-1.12.3.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn01").click(function(){
+					/*使用append()方法给选中的一个或多个元素的后面添加内容，用引号引起来，可以包含html标签*/
+/*					$("p").append("<b>这是增加的部分，其中可以包含html标签。</b>");*/					$("p").prepend("<b>这是增加的部分，其中可以包含html标签。</b>");
+				});
+				$(document).ready(function(){
+					$("#btn02").click(function(){
+						$("ol").after("<li>草莓</li>");
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1 style="color:red">在选中的一个或者多个元素后面添加内容，<b>使用append()方法，其中可以包含html的标签</b></h1>
+		<p>这是一个简单的段落。</p>
+		<p>这是一个简单的段落。</p>
+		<p>这是一个简单的段落。</p>
+		<p>这是一个简单的段落。</p>
+		<ol>
+			<li>苹果</li>
+			<li>橘子</li>
+			<li>香蕉</li>
+		</ol>
+		<button type="button" id="btn01">点击添加内容append()方法(text)</button>
+		<button type="button" id="btn02">点击添加内容append()方法(list)</button>
+	</body>
+</html>

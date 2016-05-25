@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移除一个或者多个选中元素的孩子元素</title>
+	<script src="../js/jquery-1.12.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("div").empty();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1 style="color:red">使用empty()方法移除选中的一个或多个元素的孩子元素</h1>
+	<div style="background-color: purple;border: 5px dotted green;width:200px;height:200px;">
+		<p>这是一个简单的段落</p>
+		<p class="abc">这是一个简单的段落</p>
+		<p>这是一个简单的段落</p>
+	</div><br><br>
+	<button>点击我删除div的孩子元素</button>
+</body>
+</html>
